@@ -1,80 +1,38 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT'] . '/incl/main/config.php'); ?>
+<?php
+require_once($_SERVER['DOCUMENT_ROOT'] . '/incl/main/config.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/incl/main/meta.php');
+?>
 <html>
 <head>
-	<title>sniper's website</title>
-	<meta name="title" content="sniper's website">
-	<meta name="description" content="a place with stuff and things.">
+	<title><?= $page_title; ?></title>
+	<meta name="title" content="<?= $page_title; ?>">
+	<meta name="description" content<?= $page_description; ?>">
+	<meta charset="utf-8">
 	<style type="text/css">
 	body {
-		background-image: url('/img/bg.gif');
-		padding: 0;
-		margin: 0;
-		border: 0;
-	}
-	
-	h1, h2, h3, h4, h5, h6 {
-		margin: 1px;
-	}
-	
-	a { color: #FFF; }
-	
-	.header {
-		width: 700px;
-		margin: 0 auto;
-		border-top: 0;
-		border-left: 1px solid #ffffff;
-		border-right: 1px solid #ffffff;
-		border-bottom: 1px solid #ffffff;
-	}
-	
-	.header h1 {
-		font-family: "Trebuchet MS";
-		font-size: 23px;
-		text-align: left;
-		padding: 20px 0px 15px 5px;
-		padding-left: 5px;
-		margin: 0;
-		color: #FFFFFF;
-		background-color: #000000;
-		background-image: url(img/top.gif);
-		background-repeat: repeat-x;
-		background-position: top left;
-	}
-	
-	.header p {
+		background-image: url('/assets/img/bg.gif');
+		font-family: 'Tahoma';
 		font-size: 14px;
-		font-family: "Tahoma";
-		padding: 0;
-		padding-left: 5px;
-		padding-bottom: 5px;
-		margin: 0;
-		color: #FFFFFF;
-		background-color: #000000;
 	}
 	
-	.header p { padding: 10px; }
-	
-	/* Main */
-	
-	div.content {
-		width: 690px;
-		background-color: #191919;
+	a { 
 		color: #FFFFFF;
-		font-family: "Arial";
-		font-size: 12px;
-		border: 1px solid #ffffff;
-		margin: 0 auto;
-		margin-top: 10px;
+	}
+	
+	div.container {
 		padding: 5px;
-	}
-	
+		width: 800px;
+		margin: 0 auto;
+		border: 1px solid #000000;
+		min-height: 500px;
+	}	
 	</style>
 </head>
 <body>
-	<div class="header">
-		<h1>IdioticSniper's Website</h1>
-		<p>[<a href="/">Home</a>] [<a href="http://blog.idsniper.xyz">Blog</a>] [<a href="photos.php">Photos</a>] [<a href="#">Projects</a>]</p>
-	</div>
-	
-	<div class="content">
+
+<div style="margin: 0 auto;color: #FFFFFF;background-color: #000000;width: 810px;border: 1px solid #FFFFFF;text-align:center">
+	<h1>IdioticSniper's Website</h1>
+	<p>[<a href="/">Home</a>] [<a href="http://blog.idsniper.xyz">Blog</a>] [<a href="http://snippr.idsniper.xyz/profile.gne?u=1">Photos</a>]</p>
+</div>
+<br>
 	
