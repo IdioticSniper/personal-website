@@ -6,7 +6,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/incl/main/meta.php');
 <head>
 	<title><?= $page_title; ?></title>
 	<meta name="title" content="<?= $page_title; ?>">
-	<meta name="description" content<?= $page_description; ?>">
+	<meta name="description" content="<?= $page_description; ?>">
 	<meta charset="utf-8">
 	<style type="text/css">
 	body {
